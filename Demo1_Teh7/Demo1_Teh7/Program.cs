@@ -11,7 +11,7 @@ namespace Demo1_Teh7
         static void Main(string[] args)
         {
             int year;
-            Console.WriteLine("Which year? > ");
+            Console.WriteLine("  Which year? > ");
             year = int.Parse(Console.ReadLine());
 
             if ((year % 4 == 0) && (year % 100 != 0))
