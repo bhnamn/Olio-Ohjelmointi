@@ -18,7 +18,8 @@ namespace Demo1_Teh6
             cons = x * 7.02;
             cost = cons * 1.595;
 
-            Console.WriteLine("The Gasoline consumption is: " + cons + " The charge is: " + cost);
+            Console.WriteLine("The Gasoline consumption is: " + cons + "       litre");
+            Console.WriteLine("              The charge is: " + cost + "    euro");
             Console.ReadLine();
         }
     }
