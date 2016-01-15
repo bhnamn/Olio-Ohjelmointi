@@ -10,16 +10,16 @@ namespace Demo1_Teh11
     {
         static void Main(string[] args)
         {
-            int row;
+            int i, j, row;
             Console.Write("Enter row number: ");
             row = int.Parse(Console.ReadLine());
 
-            for(int i = 0; i < row; i++)
+            for (i = 1; i <= row; i++)
             {
-                for(int j = 0; j < row; j++)
-                    Console.WriteLine("i="+i+" j="+j);
+                Console.WriteLine("");
+                for (j = 0; j < i; j++)
+                    Console.Write("*");
             }
-                
 
             Console.ReadLine();
 
