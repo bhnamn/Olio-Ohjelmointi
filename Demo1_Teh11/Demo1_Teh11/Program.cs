@@ -17,10 +17,7 @@ namespace Demo1_Teh11
             for(int i = 0; i < row; i++)
             {
                 for(int j = 0; j < row; j++)
-                {
-                    
-                    Console.WriteLine(j);
-                }
+                    Console.WriteLine("i="+i+" j="+j);
             }
                 
 
