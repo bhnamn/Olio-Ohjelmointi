@@ -8,22 +8,20 @@ namespace Demo04_Teh05
 {
     class Frequency
     {
-        private readonly double frequency (>=2000.0 || <=26000.0);
+        private readonly double minFreq = 2000.0, maxFreq = 26000.0;
 
-        private int speed;
-        public int Speed
+        private double freq;
+        public double Freq
         {
             get
             {
-                return speed;
+                return freq;
             }
             set
             {
-                if (value <= MaxSpeed) speed = value;
-                else
+                if ((value <= minFreq) || (value >= maxFreq))
                 {
-                    Console.WriteLine("Too much speed - set to maximum!");
-                    speed = MaxSpeed;
+                    freq = value;
                 }
             }
         }

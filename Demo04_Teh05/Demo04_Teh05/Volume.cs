@@ -8,22 +8,24 @@ namespace Demo04_Teh05
 {
     class Volume
     {
-        private readonly int MaxVolume = 9;
+        private readonly int minVol = 0, maxVol = 9;
 
-        private int volume;
-        public int Volume
+        private int vol;
+        public int Vol
         {
             get
             {
-                return volume;
+                return vol;
             }
             set
             {
-                if (value <= MaxVolume) volume = value;
-                else
+                if ((value <= maxVol)|| (value > minVol))
                 {
-                    Console.WriteLine("Too much volume - set to maximum!");
-                    volume = MaxVolume;
+                    vol = value;
+                }
+                else if (value == minVol)
+                {
+                    Console.WriteLine("Muted");
                 }
             }
         }

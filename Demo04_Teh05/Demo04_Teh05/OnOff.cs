@@ -8,5 +8,7 @@ namespace Demo04_Teh05
 {
     class OnOff
     {
+        public bool Switch { get; set; }
+
     }
 }
