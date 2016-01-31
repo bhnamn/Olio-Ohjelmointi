@@ -26,6 +26,19 @@ namespace Exercise1_CarApplication
                 else speed = 0;
             }
         }
+
+        // Making a default constractor to
+        // coresponding the toyota object in the clint code
+        public Car()
+        {
+
+        }
+
+        // Making a parametric costructor
+        public Car(string model)
+        {
+            Model = model;
+        }
         
         // Method to speed up
         public void Accelerator()
